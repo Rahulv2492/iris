@@ -4,6 +4,10 @@ module.exports = {
     'plugin:react/recommended',
   ],
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: 'tsconfig.json',
+    sourceType: 'module',
+  },
   plugins: [
     'react-hooks',
     'immutable',
@@ -11,7 +15,9 @@ module.exports = {
     '@typescript-eslint',
     'prettier',
     'react',
+    'deprecation',
   ],
+  ignorePatterns: ['.eslintrc.js'],
   settings: {
     'import/resolver': {
       node: {
@@ -28,6 +34,7 @@ module.exports = {
       rules: {
         'import/no-default-export': 0,
         '@typescript-eslint/ban-ts-comment': 0,
+        'deprecation/deprecation': 0,
       },
     },
     {
@@ -51,7 +58,7 @@ module.exports = {
     'no-use-before-define': 0,
     'object-curly-newline': 0,
     'operator-linebreak': 1,
-
+    'deprecation/deprecation': 'warn',
     //
     // import rules
     //

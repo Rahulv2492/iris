@@ -78,6 +78,7 @@ export type IrisA11yProps = {
   'aria-describedby'?: string;
   'aria-details'?: string;
   'aria-disabled'?: boolean | 'false' | 'true';
+  /** @deprecated */
   'aria-dropeffect'?:
     | 'none'
     | 'copy'
@@ -88,6 +89,7 @@ export type IrisA11yProps = {
   'aria-errormessage'?: string;
   'aria-expanded'?: boolean | 'false' | 'true';
   'aria-flowto'?: string;
+  /** @deprecated */
   'aria-grabbed'?: boolean | 'false' | 'true';
   'aria-haspopup'?:
     | boolean
